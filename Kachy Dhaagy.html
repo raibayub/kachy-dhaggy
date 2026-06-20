@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KACHY DHAGGY — Crafting Elegance. Defining Style.</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='82'>🧵</text></svg>">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a class="logo" href="#">KACHY<span>DHAGGY</span></a>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#kids">Kids</a></li>
+      <li><a href="#bestsellers">Collection</a></li>
+      <li><a href="#story">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:20px;">
+      <button id="theme-toggle" aria-label="Toggle Theme"
+        style="background:none; border:none; cursor:pointer; color:var(--text); font-size:1.2rem; transition: transform 0.3s ease;">
+        <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+      <a href="#bestsellers" class="nav-cta">Shop Now</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Luxury Fashion House</p>
+
+      <h1 class="hero-title">
+        <span class="brand">KACHY DHAGGY</span>
+        Crafting Elegance.<br>
+        Defining Style.
+      </h1>
+
+      <p class="hero-sub">
+        Discover timeless fashion crafted for modern lifestyles,
+        where premium fabrics meet exceptional craftsmanship.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#bestsellers" class="btn-gold">Explore Collection</a>
+        <a href="#contact" class="btn-ghost">Book Consultation</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/736x/70/8f/0c/708f0cbaf5e527f3672fbda2ca15c8c4.jpg" alt="Kachy Dhaggy Fashion">
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- FEATURED COLLECTIONS -->
+  <section class="section" id="collections">
+    <div class="section-head reveal">
+      <p class="eyebrow">Featured Collections</p>
+      <h2 class="section-title">Curated For Every Story</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Three distinct worlds, one unmistakable language of craftsmanship and refinement.</p>
+    </div>
+    <div class="collections-grid reveal-stagger">
+      <div class="collection-card" id="women">
+        <div class="art-panel">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0383/1771/9684/files/Chiba_Three_Piece_Co-ord_Set_1.webp?v=1772006712"
+            alt="Women's collection look">
+        </div>
+        <div class="collection-overlay"></div>
+        <div class="collection-label">
+          <p class="eyebrow">01 — Womenswear</p>
+          <h3>Women</h3>
+          <span class="collection-link">Discover the Edit →</span>
+        </div>
+      </div>
+      <div class="collection-card" id="men">
+        <div class="art-panel">
+          <img
+            src="https://images.pexels.com/photos/28452448/pexels-photo-28452448/free-photo-of-stylish-urban-fashion-duo-leaning-wall-outdoors.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Men' Collection">
+        </div>
+        <div class="collection-overlay"></div>
+        <div class="collection-label">
+          <p class="eyebrow">02 — Menswear</p>
+          <h3>Men</h3>
+          <span class="collection-link">Discover the Edit →</span>
+        </div>
+      </div>
+      <div class="collection-card" id="kids">
+        <div class="art-panel">
+          <img src="https://rollover.com.pk/cdn/shop/files/CO-ORD-1_1.webp?v=1781769171&width=800"
+            alt="Kid's Collection">
+        </div>
+        <div class="collection-overlay"></div>
+        <div class="collection-label">
+          <p class="eyebrow">03 — Childrenswear</p>
+          <h3>Kids</h3>
+          <span class="collection-link">Discover the Edit →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section" id="bestsellers" style="background:var(--bg-secondary);">
+    <div class="section-head reveal">
+      <p class="eyebrow">Best Sellers</p>
+      <h2 class="section-title">This Season's Favourites</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Hand-selected pieces our clients return for, season after season.</p>
+    </div>
+    <div class="products-grid reveal-stagger">
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="product-tag">New</span>
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img src="https://rarelondon.com/cdn/shop/files/273.png?v=1770047765&width=1445" alt="Women's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Women — Outerwear</p>
+          <h4 class="product-name">Tailored Wool Blazer Dress</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 14,500</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img src="https://m.media-amazon.com/images/I/71sbCqjpPkL._AC_SX342_.jpg" alt="Men's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Men — Shirting</p>
+          <h4 class="product-name">Italian Cotton Dress Shirt</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 6,200</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="product-tag">Sale</span>
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img src="https://suratikart.com/cdn/shop/files/S3D-162BLACK_3.jpg?v=1744264429" alt="Women's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Women — Eastern</p>
+          <h4 class="product-name">Silk Embroidered Anarkali</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 9,800</span>
+            <span class="product-price-old">PKR 13,000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img src="https://i.pinimg.com/474x/89/8e/45/898e45301b45881bae175e6716bf2de4.jpg" alt="Kid's collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Kids — Formal</p>
+          <h4 class="product-name">Junior Tailored Set</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 4,400</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img src="https://urban-planet.com/cdn/shop/files/096139076232-16.jpg?v=1766086483&width=1200"
+              alt="Women's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Women — Outerwear</p>
+          <h4 class="product-name">Belted Trench Coat</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 16,900</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="product-tag">New</span>
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img
+              src="https://www.lingoluxe.com/cdn/shop/files/lingo-luxe-bespoke-bespoke-suit-3-piece-suit-piacenza-fabric-30219085545542_1200x.jpg?v=1694799418"
+              alt="Men's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Men — Formal</p>
+          <h4 class="product-name">Three-Piece Tailored Suit</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 24,000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img
+              src="https://i5.walmartimages.com/seo/Women-s-Summer-Cotton-Linen-Two-Piece-Casual-Sets-Sleeveless-Tank-Tops-with-High-Waist-Wide-Leg-Palazzo-Pants-Solid-Loungewear-Wine-S_ea5ffcaa-d141-485c-b78f-e760c9cb0e7a.53204dbf0e7c86212bee84c11548d4c1.jpeg"
+              alt="Women's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Women — Casual</p>
+          <h4 class="product-name">Linen Palazzo Ensemble</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 5,600</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+          <div class="art-panel">
+            <img
+              src="https://wearochre.com/cdn/shop/files/Chiffon_Embroidered_3_Pc_Suit_-_Festive_Wear_for_Kids.jpg?v=1767346926"
+              alt="Kid's Collection">
+          </div>
+          <div class="quick-view">Quick View</div>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Kids — Festive</p>
+          <h4 class="product-name">Embroidered Festive Kurta</h4>
+          <div class="product-price-row">
+            <span class="product-price">PKR 3,200</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE KACHY DHAGGY -->
+  <section class="section" id="why">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <p class="eyebrow">Why Choose KACHY DHAGGY</p>
+      <h2 class="section-title">The KACHY DHAGGY Promise</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid reveal-stagger">
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h4>Premium Fabrics</h4>
+        <p>Sourced from trusted mills, every textile is selected for texture, drape, and longevity.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✂</div>
+        <h4>Expert Tailoring</h4>
+        <p>Master artisans bring decades of technique to every seam and silhouette.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h4>Fast Delivery</h4>
+        <p>Nationwide dispatch within 48 hours, with white-glove packaging on every order.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">◈</div>
+        <h4>Quality Assurance</h4>
+        <p>Every piece passes a rigorous multi-point inspection before it reaches you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="section" id="lookbook" style="background:var(--bg-secondary);">
+    <div class="section-head reveal">
+      <p class="eyebrow">Fashion Lookbook</p>
+      <h2 class="section-title">Editorial Moments</h2>
+      <div class="divider"></div>
+      <p class="section-sub">A visual journal of KACHY DHAGGY in motion — campaigns, fittings, and the moments between.
+      </p>
+    </div>
+    <div class="lookbook-grid reveal-stagger">
+      <div class="look-item look-tall">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/736x/b1/6a/2f/b16a2ff8aea5338f754f13f4591db25d.jpg" alt="Spring Outfit">
+        </div>
+        <div class="look-overlay"><span>Spring Edit</span></div>
+      </div>
+      <div class="look-item">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/736x/20/21/24/2021245146cf3cc29cb16cd5b342de96.jpg" alt="tailored">
+        </div>
+        <div class="look-overlay"><span>Tailored</span></div>
+      </div>
+      <div class="look-item look-wide">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/736x/37/ed/d8/37edd82ef385e0e33bcddbdd885152be.jpg" alt="Men's Wear">
+        </div>
+        <div class="look-overlay"><span>Menswear SS</span></div>
+      </div>
+      <div class="look-item">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/736x/27/8a/f0/278af0204e484850c9a2a68ed7759be4.jpg" alt="desi outfit">
+        </div>
+        <div class="look-overlay"><span>Eastern Luxe</span></div>
+      </div>
+      <div class="look-item look-tall">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/1200x/d5/2a/e4/d52ae4d33feeb390ebe463e5a4703e4c.jpg" alt="outerwear">
+        </div>
+        <div class="look-overlay"><span>Outerwear</span></div>
+      </div>
+      <div class="look-item look-tall">
+        <div class="art-panel">
+          <img src="https://i.pinimg.com/1200x/1b/09/79/1b09798629c372e827bec4ffcc2efc5b.jpg" alt="festive">
+        </div>
+        <div class="look-overlay"><span>Festive</span></div>
+      </div>
+      <div class="look-item look-wide">
+        <div class="art-panel">
+          <img src="https://www.shutterstock.com/image-photo/adorable-children-on-different-color-260nw-2477271221.jpg"
+            alt="kids">
+        </div>
+        <div class="look-overlay"><span>Junior Line</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <p class="eyebrow">Client Voices</p>
+      <h2 class="section-title">What They Say</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="testimonial-grid reveal-stagger">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The tailoring is impeccable — every piece fits like it was made just for me. KACHY
+          DHAGGY
+          has become my go-to for formal wear."</p>
+        <div class="testimonial-author">
+          <div class="avatar-art author-avatar"
+            style="display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:var(--gold);font-size:0.95rem;font-weight:600;">
+            SM</div>
+          <div>
+            <p class="author-name">Sana Malik</p>
+            <p class="author-role">Verified Client, Lahore</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Genuinely premium fabric quality. The blazer dress I ordered exceeded every
+          expectation — fast delivery too."</p>
+        <div class="testimonial-author">
+          <div class="avatar-art author-avatar"
+            style="display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:var(--gold);font-size:0.95rem;font-weight:600;">
+            BA</div>
+          <div>
+            <p class="author-name">Bilal Ahmed</p>
+            <p class="author-role">Verified Client, Karachi</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"From consultation to fitting, the entire experience felt luxurious. My daughter's
+          festive kurta was a showstopper."</p>
+        <div class="testimonial-author">
+          <div class="avatar-art author-avatar"
+            style="display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:var(--gold);font-size:0.95rem;font-weight:600;">
+            HS</div>
+          <div>
+            <p class="author-name">Hira Siddiqui</p>
+            <p class="author-role">Verified Client, Islamabad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STORY -->
+  <section class="story-section" id="story">
+    <div class="story-grid">
+      <div class="story-img reveal">
+        <div class="art-panel light">
+          <video autoplay muted loop playsinline>
+            <source src="https://v1.pinimg.com/videos/mc/expMp4/7e/f7/a1/7ef7a1affcb781f985a68de9a0ca7190_t1.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="story-content reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">Crafted With Intention</h2>
+        <div class="divider"></div>
+        <p>KACHY DHAGGY was founded on a single belief: that clothing should be an heirloom, not a trend. Every
+          collection
+          begins in our atelier, where master tailors and textile artisans work in close collaboration to translate
+          ideas into garments that endure.</p>
+        <p>We source fabrics from mills we trust, cut every pattern with precision, and finish each piece by hand. The
+          result is fashion that feels less like a purchase and more like a promise — elegance that's built to last.</p>
+        <div class="story-stats">
+          <div class="story-stat">
+            <strong><span class="stat-number" data-target="18">0</span>+</strong>
+            <span>Years of Craft</span>
+          </div>
+          <div class="story-stat">
+            <strong><span class="stat-number" data-target="50">0</span>K+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="story-stat">
+            <strong><span class="stat-number" data-target="120">0</span>+</strong>
+            <span>Collections</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" style="background:var(--bg-secondary);">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Visit The Atelier</h2>
+        <div class="divider"></div>
+        <p>Book a private consultation, enquire about bespoke tailoring, or simply say hello — our concierge team
+          responds within 24 hours.</p>
+
+        <div class="info-row">
+          <div class="info-icon">⌂</div>
+          <div>
+            <p class="info-label">Flagship Store</p>
+            <p class="info-value">14 Boulevard Road, Gulberg V, Lahore</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">☎</div>
+          <div>
+            <p class="info-label">Concierge</p>
+            <p class="info-value">+92 300 999 4521</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">✉</div>
+          <div>
+            <p class="info-label">Email</p>
+            <p class="info-value">concierge@KACHY DHAGGY.com</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">◷</div>
+          <div>
+            <p class="info-label">Hours</p>
+            <p class="info-value">Mon – Sat, 11 AM – 9 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Aisha" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Khan" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="+92 3XX XXXXXXX" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="interest">I'm Interested In</label>
+          <select id="interest">
+            <option value="" disabled selected>Select an option…</option>
+            <option>Private Consultation</option>
+            <option>Bespoke Tailoring</option>
+            <option>Wholesale Enquiry</option>
+            <option>Press &amp; Media</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us how we can help…"></textarea>
+        </div>
+        <button type="button" class="btn-submit">Send Enquiry →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">KACHY<span>DHAGGY</span></div>
+        <p class="footer-about">Crafting elegance and defining style since 2008. A luxury fashion house dedicated to
+          timeless craftsmanship.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/__riyahere_/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06C2 17.06 5.66 21.2 10.44 21.95V14.9H7.9v-2.84h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.84h-2.33v7.05C18.34 21.2 22 17.06 22 12.06z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.pinterest.com/raibaayub/" aria-label="Pinterest">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.31-.09-.79-.16-2.01.04-2.87.18-.78 1.16-4.96 1.16-4.96s-.3-.59-.3-1.46c0-1.37.79-2.39 1.78-2.39.84 0 1.25.63 1.25 1.39 0 .85-.54 2.11-.82 3.28-.23.98.49 1.78 1.46 1.78 1.75 0 3.1-1.85 3.1-4.52 0-2.36-1.7-4.02-4.12-4.02-2.81 0-4.46 2.1-4.46 4.28 0 .85.33 1.76.74 2.25.08.1.09.18.07.28-.07.31-.24.98-.27 1.12-.04.18-.14.22-.32.13-1.2-.56-1.95-2.31-1.95-3.72 0-3.03 2.2-5.81 6.34-5.81 3.33 0 5.92 2.37 5.92 5.54 0 3.31-2.08 5.97-4.98 5.97-.97 0-1.89-.51-2.2-1.1l-.6 2.29c-.22.83-.81 1.88-1.2 2.51.91.28 1.86.43 2.86.43 5.52 0 10-4.48 10-10S17.52 2 12 2z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/en/" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M16.6 5.82c-.99-.98-1.6-2.27-1.71-3.7h-3.06v13.3c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9 1.3-2.9 2.9-2.9c.29 0 .56.04.82.12V9.5a6.12 6.12 0 0 0-.82-.05A6.05 6.05 0 1 0 14.99 15.5V9.05a8.75 8.75 0 0 0 5.11 1.64V7.64c-1.27 0-2.45-.5-3.5-1.82z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#women">Women</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#kids">Kids</a></li>
+          <li><a href="#bestsellers">Best Sellers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#story">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Newsletter</h5>
+        <p class="footer-about">Subscribe for early access to new collections and private sales.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 KACHY DHAGGY. All rights reserved.</span>
+      <ul class="footer-bottom-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Shipping</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

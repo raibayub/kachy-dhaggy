@@ -6,6 +6,9 @@
 
 A single-page website concept for a luxury fashion house, built with vanilla HTML, CSS, and JavaScript — no frameworks or dependencies.
 
+## Live Preview
+Live preview available on https://raibayub.github.io/kachy-dhaggy/
+
 ## Features
 
 - Dark / light mode with saved preference
